@@ -17,5 +17,5 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: nginx
+      - image: registry.cn-hangzhou.aliyuncs.com/tanlay/nginx:1.13.1
         name: nginx

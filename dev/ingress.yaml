@@ -1,18 +1,18 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: nginx-ingress
+  name: nginx
   namespace: demo
 spec:
   ingressClassName: nginx
   rules:
-  -host: nginx.tanlay.com
-    http:
-      paths:
-      -backend:
-          service:
-            name: myapp-service
-            port:
-              number: 80
-        path: /
-        pathType: Prefix
+  - host: nginx.tanlay.com
+    http:
+      paths:
+      - backend:
+          service:
+            name: nginx
+            port:
+              number: 80
+        path: /
+        pathType: ImplementationSpecific

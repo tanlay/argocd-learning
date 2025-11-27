@@ -1,12 +1,12 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-name: nginx-ingress
-namespace: demo
+  name: nginx-ingress
+  namespace: demo
 spec:
-ingressClassName: nginx
-rules:
--host: nginx.tanlay.com
+  ingressClassName: nginx
+  rules:
+  -host: nginx.tanlay.com
     http:
       paths:
       -backend:
